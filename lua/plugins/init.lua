@@ -38,7 +38,8 @@ return {
         "html-lsp",
         "prettierd",
         "stylua",
-        "eslint-lsp"
+        "eslint-lsp",
+        "python-lsp-server",
       }
     }
   },
@@ -86,5 +87,17 @@ return {
       require("tailwindcss-colorizer-cmp").setup({})
       require("configs.tailwindcss-colorizer-cmp")
     end
+  },
+  {
+    "olimorris/persisted.nvim",
+    lazy = false,
+    config = function()
+      require("persisted").setup()
+      require "configs.persistence"
+    end,
+  },
+  {
+    "github/copilot.vim",
+    lazy = false
   },
 }
