@@ -1,6 +1,14 @@
 local options = {
 	lsp_fallback = true,
-
+	formatters = {
+		prettierd = {
+			prepend_args = {
+				"--single-quote",
+				"--trailing-comma",
+				"--tab-width 4",
+			},
+		},
+	},
 	formatters_by_ft = {
 		lua = { "stylua" },
 		javascript = { "prettierd" },
@@ -15,7 +23,6 @@ local options = {
 		c = { "prettierd" },
 		java = { "google-java-format" },
 	},
-
 	format_on_save = {
 		async = false,
 		timeout_ms = 500,
