@@ -20,7 +20,6 @@ local options = {
 		scss = { "prettierd" },
 		json = { "prettierd" },
 		python = { "isort", "black" },
-		c = { "prettierd" },
 		java = { "google-java-format" },
 	},
 	format_on_save = {
