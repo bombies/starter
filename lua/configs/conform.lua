@@ -13,6 +13,7 @@ local options = {
 		json = { "prettierd" },
 		python = { "isort", "black" },
 		c = { "prettierd" },
+		java = { "google-java-format" },
 	},
 
 	format_on_save = {

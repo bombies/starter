@@ -14,6 +14,7 @@ local servers = {
   "tsserver",
   "eslint",
   "pylsp",
+  "jdtls",
 }
 
 for _, lsp in ipairs(servers) do
