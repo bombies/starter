@@ -1,11 +1,11 @@
 return {
-  {
-    "nvimtools/none-ls.nvim",
-    event = "VeryLazy",
-    opts = function()
-      return require "configs.null-ls"
-    end,
-  },
+  -- {
+  --   "nvimtools/none-ls.nvim",
+  --   event = "VeryLazy",
+  --   opts = function()
+  --     return require "configs.null-ls"
+  --   end,
+  -- },
   {
     "stevearc/conform.nvim",
     config = function()
@@ -38,6 +38,8 @@ return {
         "html-lsp",
         "prettierd",
         "stylua",
+        "isort",
+        "black",
         "eslint-lsp",
         "python-lsp-server",
       }
