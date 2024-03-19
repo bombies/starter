@@ -113,4 +113,22 @@ return {
 		end,
 		ft = { "markdown" },
 	},
+	{
+		"ThePrimeagen/refactoring.nvim",
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+			"nvim-treesitter/nvim-treesitter",
+		},
+		config = function()
+			require("refactoring").setup()
+			require("configs.refactor")
+		end,
+	},
+	{
+		"smjonas/inc-rename.nvim",
+		config = function()
+			require("inc_rename").setup()
+			require("configs.inc-renamer")
+		end,
+	},
 }
