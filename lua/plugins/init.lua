@@ -119,14 +119,15 @@ return {
 			"nvim-lua/plenary.nvim",
 			"nvim-treesitter/nvim-treesitter",
 		},
-		config = function()
+    config = function()
 			require("refactoring").setup()
 			require("configs.refactor")
 		end,
 	},
 	{
 		"smjonas/inc-rename.nvim",
-		config = function()
+		lazy = false,
+    config = function()
 			require("inc_rename").setup()
 			require("configs.inc-renamer")
 		end,
