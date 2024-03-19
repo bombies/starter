@@ -44,6 +44,7 @@ return {
 				"python-lsp-server",
 				"jdtls",
 				"google-java-format",
+        "prisma-language-server",
 			},
 		},
 	},
