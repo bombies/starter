@@ -16,7 +16,11 @@ return {
 	{
 		"nvim-tree/nvim-tree.lua",
 		opts = {
-			git = { enable = true },
+			git = {
+				enable = true,
+				ignore = false,
+				timeout = 500,
+			},
 		},
 	},
 
@@ -44,7 +48,7 @@ return {
 				"python-lsp-server",
 				"jdtls",
 				"google-java-format",
-        "prisma-language-server",
+				"prisma-language-server",
 			},
 		},
 	},
@@ -79,7 +83,7 @@ return {
 
 				-- other
 				"python",
-        "prisma",
+				"prisma",
 
 				-- low level
 				"c",
@@ -121,7 +125,7 @@ return {
 			"nvim-lua/plenary.nvim",
 			"nvim-treesitter/nvim-treesitter",
 		},
-    config = function()
+		config = function()
 			require("refactoring").setup()
 			require("configs.refactor")
 		end,
@@ -129,7 +133,7 @@ return {
 	{
 		"smjonas/inc-rename.nvim",
 		lazy = false,
-    config = function()
+		config = function()
 			require("inc_rename").setup()
 			require("configs.inc-renamer")
 		end,
