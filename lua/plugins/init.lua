@@ -79,6 +79,7 @@ return {
 
 				-- other
 				"python",
+        "prisma",
 
 				-- low level
 				"c",
