@@ -6,7 +6,8 @@ return {
       "nvimtools/none-ls-extras.nvim",
     },
     opts = function()
-      return require("configs.null-ls"), vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
+      vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
+      return require("configs.null-ls")
     end,
   },
   {
