@@ -7,14 +7,21 @@ return {
     },
     opts = function()
       vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
-      return require("configs.null-ls")
+      return require("configs.null-l1s")
     end,
   },
-  {
+  {  
     "stevearc/conform.nvim",
-    -- config = function()
-    -- 	require("configs.conform")
-    -- end,
+    event = 'BufWritePre', -- uncomment for format on save
+    opts = require "configs.conform",
+  },
+
+  -- These are some examples, uncomment them if you want to see them work!
+  {
+    "neovim/nvim-lspconfig",
+    config = function()
+      require "configs.lspconfig"
+    end,
   },
 
   {
